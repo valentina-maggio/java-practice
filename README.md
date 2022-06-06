@@ -1,3 +1,5 @@
 # Java Practice
 
-Practice exercises to learn Java.
+Simple practice exercises to learn Java.
+
+TDD of small programs with JUnit.
