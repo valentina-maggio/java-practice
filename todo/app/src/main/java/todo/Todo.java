@@ -9,4 +9,8 @@ public class Todo {
   public ArrayList<String> getTodos() {
     return this.todos;
   }
+
+  public void addTask(String task) {
+    this.todos.add(task);
+  }
 }
