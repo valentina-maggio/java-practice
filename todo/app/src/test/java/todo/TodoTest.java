@@ -17,4 +17,14 @@ public class TodoTest {
     todo.addTask("shopping");
     assertEquals("Add shopping task to todo list", 1, todo.getTodos().size());
   }
+
+  @Test
+  public void GetListOfTasks() {
+    Todo todo = new Todo();
+    todo.addTask("shopping");
+    todo.addTask("doctor");
+    todo.addTask("cleaning");
+
+    assertEquals("Add shopping task to todo list", 3, todo.getTodos().size());
+  }
 }

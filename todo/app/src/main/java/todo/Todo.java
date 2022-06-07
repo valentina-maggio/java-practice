@@ -13,4 +13,12 @@ public class Todo {
   public void addTask(String task) {
     this.todos.add(task);
   }
+
+  public void displayTodos() {
+    // for (String task : this.todos) {
+    // System.out.println(task);
+    // }
+    // other print version:
+    System.out.println(this.todos.toString());
+  }
 }
