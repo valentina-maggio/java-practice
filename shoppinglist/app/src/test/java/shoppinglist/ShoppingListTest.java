@@ -6,20 +6,28 @@ import org.junit.Test;
 
 public class ShoppingListTest {
   @Test
-  public void testAddsAnItemToTheList() {
-    ShoppingList list = new ShoppingList();
-    list.addItem("milk");
+  public void testAddsTwoItemsToTheList() {
+    ShoppingItem item1 = new ShoppingItem("banana", 0.55);
+    ShoppingItem item2 = new ShoppingItem("avocado", 1.75);
 
-    assertEquals("Add milk to shopping list", 1, list.getList().size());
+    ShoppingList list = new ShoppingList();
+    list.addItem(item1);
+    list.addItem(item2);
+
+    assertEquals("Add milk to shopping list", 2, list.getList().size());
   }
 
   @Test
-  public void testReturnsTheItemsInTheList() {
-    ShoppingList list = new ShoppingList();
-    list.addItem("milk");
-    list.addItem("bread");
-    list.addItem("honey");
+  public void ttestAddsThreeItemsToTheList() {
+    ShoppingItem item1 = new ShoppingItem("banana", 0.55);
+    ShoppingItem item2 = new ShoppingItem("avocado", 1.75);
+    ShoppingItem item3 = new ShoppingItem("salad", 1.10);
 
-    assertEquals("Returns the items in the list", "milk, bread, honey", list.getItems());
+    ShoppingList list = new ShoppingList();
+    list.addItem(item1);
+    list.addItem(item2);
+    list.addItem(item3);
+
+    assertEquals("Returns the items in the list", 3, list.getList().size());
   }
 }
