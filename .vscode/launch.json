@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch PriceDisplay",
+      "request": "launch",
+      "mainClass": "displayprice.PriceDisplay",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Calculator",
+      "request": "launch",
+      "mainClass": "calculator.Calculator",
+      "projectName": "calculator-app"
+    },
+    {
+      "type": "java",
       "name": "Launch Todo",
       "request": "launch",
       "mainClass": "todo.Todo",
