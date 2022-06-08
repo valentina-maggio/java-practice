@@ -12,4 +12,9 @@ public class ShoppingList {
   public ArrayList<String> getList() {
     return this.list;
   }
+
+  public String getItems() {
+    String items = String.join(", ", list);
+    return items;
+  }
 }
