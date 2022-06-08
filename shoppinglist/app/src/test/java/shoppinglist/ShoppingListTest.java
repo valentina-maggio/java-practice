@@ -8,8 +8,8 @@ public class ShoppingListTest {
   @Test
   public void testAddsAnItemToTheList() {
     ShoppingList list = new ShoppingList();
+    list.addItem("milk");
 
-    assertEquals("It adds milk to the shopping list", String.valueOf("milk was added to the list"),
-        list.addItem("milk"));
+    assertEquals("Add milk to shopping list", 1, list.getList().size());
   }
 }
