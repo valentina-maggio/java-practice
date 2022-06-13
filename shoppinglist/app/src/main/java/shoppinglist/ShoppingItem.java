@@ -5,11 +5,11 @@ public class ShoppingItem {
   private Double price;
 
   public ShoppingItem(String itemName, Double itemPrice) {
-    name = itemName;
-    price = itemPrice;
+    this.name = itemName;
+    this.price = itemPrice;
   }
 
   public String getDetails() {
-    return name + " £" + price;
+    return this.name + " £" + this.price;
   }
 }
